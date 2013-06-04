@@ -12,6 +12,8 @@ Adding to your Django Project
 
 Requires Django 1.3, 1.4 or 1.5.
 
+Install (e.g. by adding import-descendants==1.0.0 to your requirements.txt or by using pip).
+
 Add import\_descendants to your INSTALLED_APPS.
 
 If you want to use it for tests, add the following to <your-app>/tests/__init__.py:
