@@ -30,7 +30,7 @@ def import_descendants(parent_module, target_globals, target_locals):
         # itself, so if we didn't have this guard then we'd try to import the
         # parent module into itself)
         if root_dir != basedir:
-            exec 'from %s import *' % (package,) in target_globals, target_locals
+            exec('from %s import *' % (package,), target_globals, target_locals)
 
         for module in modules:
-            exec 'from %s.%s import *' % (package, module) in target_globals, target_locals
+            exec('from %s.%s import *' % (package, module), target_globals, target_locals)
